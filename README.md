@@ -2,7 +2,7 @@
 NoPixel Based VAR hacking minigame
 
 # Acknowledgment
-I'm not entirely sure the origin of this code, but shoutout to [sharkiller](https://github.com/sharkiller) for hosting the javascript files on their github. This is simply a repackaging of those files into a Fivem NUI resource.
+I'm not entirely sure the origin of this code, but shoutout to [sharkiller](https://github.com/sharkiller/nopixel_minigame) for hosting the javascript files on their github. This is simply a repackaging of those files into a Fivem NUI resource.
 
 # Usage
 ```lua
