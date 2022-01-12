@@ -9,7 +9,7 @@ I'm not entirely sure the origin of this code, but shoutout to [sharkiller](http
 exports['varhack']:OpenHackingGame(function(success)
     if success then
         print("success")
-	else
+    else
         print("failed")
 	end
 end, 2, 3)
