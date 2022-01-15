@@ -52,12 +52,13 @@ let validate = (ev) => {
             game_playing = false;
             document.querySelector('.splash .text').innerHTML = 'SUCCESS!';
             document.querySelector('.splash').classList.remove('hidden');
+            $(".group").css("display", "none");
             setTimeout(function() { 
-                $(".minigame").fadeOut()
+                $(".minigame").fadeOut();
+                document.querySelector(".splash .text").innerHTML = 'PREPARING INTERFACE...';
                 destroy()
                 $.post('https://varhack/callback', JSON.stringify({ 'success': true }));
             }, 2000);
-            
         }
     } else {
         //destroy()
@@ -81,7 +82,6 @@ let validate = (ev) => {
             destroy();
             $.post('https://varhack/callback', JSON.stringify({ 'success': false }));
         }, 4000);
-         
     }
 }
 

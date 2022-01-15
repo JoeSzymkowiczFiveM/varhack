@@ -12,7 +12,3 @@ files {
   'minigame.css',
   'index.html'
 }
-
-exports {
-  'OpenHackingGame'
-}

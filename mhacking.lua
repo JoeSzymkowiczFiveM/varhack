@@ -19,12 +19,14 @@ function OpenHackingGame(callback, blocks, speed)
     end
 end
 
+exports("OpenHackingGame", OpenHackingGame)
+
 --[[ RegisterCommand("varhack",function()
     exports['varhack']:OpenHackingGame(function(success)
         if success then
-            print("success")
+            print("sa")
 		else
-			print("failed")
+			print("as")
 		end
     end, 2, 3)
 end) ]]
