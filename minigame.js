@@ -34,7 +34,7 @@ document.addEventListener("keydown", function(ev) {
                 game_playing = false;
                 ev.target.classList.add('bad');
                 destroy()
-                $.post('https://${GetParentResourceName()}/callback', JSON.stringify({ 'success': false }));
+                $.post(`https://${GetParentResourceName()}/callback`, JSON.stringify({ 'success': false }));
                 setTimeout(function() { $(".minigame").fadeOut() }, 500);
                 break;
         }
@@ -57,7 +57,7 @@ let validate = (ev) => {
                 $(".minigame").fadeOut();
                 document.querySelector(".splash .text").innerHTML = 'PREPARING INTERFACE...';
                 destroy()
-                $.post('https://${GetParentResourceName()}/callback', JSON.stringify({ 'success': true }));
+                $.post(`https://${GetParentResourceName()}/callback`, JSON.stringify({ 'success': true }));
             }, 2000);
         }
     } else {
@@ -80,7 +80,7 @@ let validate = (ev) => {
         setTimeout(function() { 
             $(".minigame").fadeOut();
             destroy();
-            $.post('https://${GetParentResourceName()}/callback', JSON.stringify({ 'success': false }));
+            $.post(`https://${GetParentResourceName()}/callback`, JSON.stringify({ 'success': false }));
         }, 4000);
     }
 }
