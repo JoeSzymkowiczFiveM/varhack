@@ -20,6 +20,5 @@ end, 2, 3)
 
 The first argument in this example represents the number of blocks in the puzzle. The second argument in this example represents the number of seconds that the player will see the exposed numbers, before they are hidden and the puzzle begins. 
 
-##### Qbus.xyz Discord:
-[Discord](https://discord.gg/jTsrKaV6As)
-
+## Discord
+[Joe Szymkowicz FiveM Development](https://discord.gg/5vPGxyCB4z)
